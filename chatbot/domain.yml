@@ -1,0 +1,207 @@
+
+intents:
+  # "default" intents
+  - affirm
+  - deny
+  - greet
+  - goodbye
+  - default
+
+  # intents related to modules
+  - set_context_module
+  - inform_module
+  - show_found_modules
+  - show_found_persons
+  - choose_add_more_module_information
+
+  # intents related to mensas
+  - set_context_mensa
+  - inform_mensa
+  - inform_vegetarian_true
+  - inform_vegan_true
+  - reset_food_restrictions
+  - show_mensa_data
+  - show_mensa_menu
+  - add_more_mensa_information
+  # other intents
+  - reset_dialogue
+
+entities:
+  # entities related to modules
+  - moduleTitle
+  - program
+  - degree
+  - courseRegulation
+  - person
+  - ects
+
+  # entities related to mensas
+  - mensaName
+  - price
+  - menuCourse
+
+  # not set
+  - time
+
+slots:
+  # slots related to modules
+  moduleTitle:
+    type: text
+  program:
+    type: text
+  degree:
+    type: text
+  courseRegulation:
+    type: text
+  person:
+    type: text
+  ects:
+    type: float
+    initial_value: 0.0
+    min_value: 0.0
+
+  # slots filled by actions related to module queries
+  moduleTitleExactMatch:
+    type: unfeaturized
+    initial_value: False
+  moduleTitleMatch:
+    type: categorical
+    values:
+      - zero
+      - one
+      - multiple
+  programExactMatch:
+    type: unfeaturized
+    initial_value: False
+  programMatch:
+    type: categorical
+    values:
+      - zero
+      - one
+      - multiple
+  courseRegulationMatch:
+    type: categorical
+    values:
+    - zero
+    - one
+    - multiple
+  personQuery:
+    type: unfeaturized
+
+  personMatch:
+    type: categorical
+    values:
+      - zero
+      - one
+      - multiple
+  personModuleMatch:
+    type: categorical
+    values:
+      - zero
+      - one
+      - multiple
+  ectsMatch:
+    type: categorical
+    values:
+      - zero
+      - one
+      - multiple
+
+  # mensa related slots
+  mensaName:
+    type: list
+  menuCourse:
+    type: list
+  price:
+    type: float
+    initial_value: 0.0
+    min_value: 0.0
+  vegetarian:
+    type: bool
+    initial_value: False
+  vegan:
+    type: bool
+    initial_value: False
+  # slots filled by actions related to mensa queries
+  mensaMatch:
+    type: categorical
+    values:
+      - zero
+      - one
+      - multiple
+
+# not implemented
+#  time:
+#    type: text
+
+
+
+templates:
+  utter_greet:
+    - "Hey there my name is MeMo-Bot, how may I help you?"
+    - "G'day mate, need any assistance there?"
+  utter_goodbye:
+    - "goodbye :("
+    - "bye bye"
+  utter_default:
+    - "Sorry I didn't quite get that. I'm resetting the our dialogue"
+  utter_ask_show_found_modules:
+    - text: "Do you want to see a list of the results with your combined information or would you like to give me some further information?"
+      buttons:
+      - title: "Yes!"
+        payload: "/show_found_modules"
+      - title: "Add more information."
+        payload: "/choose_add_more_module_information"
+      - title: "Reset dialogue."
+        payload: "/reset_dialogue"
+  utter_ask_show_mensa_information:
+    - text: "Do you want to see a list of information about the mensas I found, see the menus for your specified date or change your request?"
+      buttons:
+      - title: "more information"
+        payload: "/add_more_mensa_information"
+      - title: "Mensa data"
+        payload: "/show_mensa_data"
+      - title: "Mensa menus"
+        payload: "/show_mensa_menu"
+      - title: "change request"
+        payload: "/reset_dialogue"
+
+
+actions:
+  # "default" actions
+  - utter_greet
+  - utter_goodbye
+  - utter_default
+  - action_reset_dialogue
+  - action_fallback
+
+  # modules
+  - utter_ask_show_found_modules
+
+  - action_set_context_module
+  - action_check_module_title
+  - action_check_program
+  - action_check_course_regulations
+  - action_check_ects
+  - action_check_person
+
+  - action_ask_for_more_module_information
+  - action_show_found_modules
+  - action_show_found_persons
+
+  # mensa
+  - utter_ask_show_mensa_information
+
+  - action_set_context_mensa
+  - action_check_mensa_names
+  - action_check_price
+  - action_check_menu_course
+  - action_set_vegetarian_true
+  - action_set_vegan_true
+  - action_reset_food_restrictions
+
+  - action_show_mensa_data
+  - action_show_mensa_menu
+  - action_ask_for_more_mensa_information
+
+

@@ -1,0 +1,39 @@
+// Ways to say you're vegetarian
+%[inform_vegetarian_true]('training': '50', 'testing': '20')
+    ~[greetings?] ~[im vegetarian]
+    ~[greetings?] ~[i dont eat meat]
+    ~[im vegetarian] ~[i dont eat meat]
+
+~[im vegetarian]
+    im vegetarian
+    i'm vegetarian
+    im on a vegetarian diet
+    i'm on a vegetarian diet
+    im herbivorous
+    only vegetarian food
+    only vegetarian
+    vegetarian food
+    just vegetarian
+    vegetarian only
+    vegetarian diet
+
+~[i dont eat meat]
+    i dont eat meat
+    i don't eat meat
+    i dont like meat
+    i don't like meat
+    no meat
+    i hate meat
+    meat no
+    meat not
+    can't eat meat
+    cant eat meat
+    won't eat meat
+    wont eat meat
+
+~[greetings]
+    greetings
+    how are you
+    whats up
+    hello
+    hi

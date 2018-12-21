@@ -1,0 +1,54 @@
+// Ways to ask to show mensa menu
+%[show_mensa_menu]('training': '500', 'testing': '500')
+    ~[please?] ~[show found menu] ~[please?]
+    ~[please?] ~[show found menu] ~[for?] @[mensaName] ~[please?]
+
+~[please]
+    please
+    if you don't mind
+    if you would be so good
+
+~[show found menu]
+    show found mensa menu
+    show found mensa menus
+    show me the opening hours
+    show the mensa menu
+    can you show me the mensa menus
+    what is on the menu for
+    what is on the offer
+    what is the mensa offering
+    list mensa menu
+    list mensa menu information
+    list information about menus
+    list information about menu
+    whats on the card
+    show me the menu
+    show th menu
+
+~[for]
+    for
+    for the
+    about the
+    related to the
+    regarding the
+
+@[mensaName]
+    hardenberg
+    haupt
+    hauptmensa
+    hardenbergmensa
+    skyline cafe
+    skyline
+    cafe skyline
+    tel
+    march
+    mar
+    marmensa
+    marchgebäude
+    mar cafe
+    march cafeteria
+    wetterleuchte
+    wetterleuchten
+    hauptgebaudecafe
+    cafe wetterleuchte
+    wetterleuchten cafe

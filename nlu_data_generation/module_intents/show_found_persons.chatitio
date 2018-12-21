@@ -1,0 +1,41 @@
+// Ways to say that you want to show persons
+%[show_found_persons]('training': '300', 'testing': '300')
+    ~[please?] ~[show found persons] ~[please?]
+
+~[please]
+    please
+    if you don't mind
+    if you would be so good
+
+~[show found persons]
+    show found persons
+    can you show me found persons
+    can you list all persons
+    found persons
+    show me the persons
+    list persons
+    list person
+    list all persons
+    list all found persons
+    list all found person
+    show found professors
+    can you show me found professors
+    can you list all professors
+    found professors
+    show me the professors
+    list professors
+    list professor
+    list all professors
+    list all found professors
+    list all found professor
+    show found teachers
+    can you show me found teachers
+    can you list all teachers
+    found teachers
+    show me the teachers
+    list teachers
+    list teacher
+    list all teachers
+    list all found teachers
+    list all found teacher
+

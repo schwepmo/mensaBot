@@ -1,0 +1,52 @@
+// say that you want to add more information
+%[add_more_mensa_information]('training': '200', 'testing': '200')
+    ~[yes] ~[i want to?] ~[add more information] ~[about mensa]
+    ~[i want to] ~[add more information] ~[about mensa]
+    ~[add more information]
+    ~[add more information] ~[about mensa?]
+
+~[yes]
+    yes
+    right
+    affirmative
+    yes to that
+    correct
+    yep
+    yes sir
+    si
+    correcto
+    ok
+    right
+    allright
+
+~[i want to]
+    i want to
+    i will
+    let me
+    want to
+    i wish to
+
+~[add more information]
+    add more information
+    give more information
+    tell you more
+    tell you more information
+    tell information
+    give information
+    additional information
+    additional info
+    give info
+    give more info
+    add more info
+    search more
+    add more mensa information
+    give more mensa information
+    add more restrictions
+
+~[about mensa]
+    about mensa
+    about mensas
+    according to mensa
+    according to mensas
+    related to mensa
+    related to mensas

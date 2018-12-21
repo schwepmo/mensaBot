@@ -1,0 +1,31 @@
+// Ways to say you're vegan
+%[inform_vegan_true]('training': '50', 'testing': '20')
+    ~[greetings?] ~[im vegan]
+    ~[im vegan]
+
+~[im vegan]
+    im vegan
+    i'm vegan
+    im on a vegan diet
+    i'm on a vegan diet
+    i only eat vegan food
+    i insist on vegan food
+    please only show me vegan food
+    vegan
+    only show me vegan meals
+    is there any vegan food on the menu
+    are there vegan meals
+    show me only vegan food
+    i only eat plants
+    show me only vegan food
+    only vegan
+    vegan only
+    please only vegan food
+    i only like vegan
+
+~[greetings]
+    greetings
+    how are you
+    whats up
+    hello
+    hi

@@ -1,0 +1,46 @@
+// Ways to reset the dialogue
+%[reset_dialogue]('training': '100', 'testing': '50')
+    ~[reset] ~[please?]
+    ~[stop] ~[reset?]
+
+~[reset]
+    reset
+    reset
+    reset
+    reset our dialogue
+    reset our dialogues
+    reset the dialogue
+    reset the conversation
+    reset our conversation
+    please stop
+    stop conversation
+    im done
+    i cant do this anymore
+    restart
+    restart conversation
+    redo conversation
+    reset dialogue
+    stop the conversation
+    RESET
+    Reset
+    re-go
+    deadend
+    we are at a deadend
+    do not continue
+
+~[stop]
+    stop
+    break
+    discontinue
+    STOP
+    stahp
+    Stop
+    halt
+    Halt
+    HALT
+    NO
+
+~[please]
+    please
+    if you don't mind
+    if you would be so good

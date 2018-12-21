@@ -1,0 +1,157 @@
+// Ways to give information about mensa
+%[inform_mensa]('training': '25000', 'testing': '10000')
+    ~[information about] @[mensaName]
+    ~[looking for] @[mensaName]
+    ~[looking for] @[mensaName] ~[with a price] @[price]
+    ~[information for] @[mensaName] ~[with a price] @[price]
+    ~[with a price] @[price]
+    ~[with a price] @[price] ~[only show me] @[menuCourse]
+    ~[only show me] @[menuCourse]
+    ~[looking for] @[menuCourse]
+    ~[looking for] @[menuCourse] ~[course]
+    ~[only show me] @[menuCourse]  ~[course]
+    @[mensaName]
+    @[menuCourse]
+    ~[information for] @[mensaName] ~[with a price] @[price] ~[only show me] @[menuCourse]
+
+~[information about]
+    i want more information about
+    i need more information about
+    show me
+    show me the module
+    can you show me
+    what about
+    help me with information about
+    how about
+    i want
+
+~[looking for]
+    i'm looking for
+    im looking for
+    i look for
+    i want to see
+    i need information about
+    i'm interested in
+    im interested in
+    interested in
+
+~[only show me]
+    only show me
+    just the course
+    i just want
+
+~[euro]
+    euro
+    Euro
+    €
+    dollar
+
+~[with a price]
+    with a price
+    cheaper than
+    not more expensive than
+    costing
+    costing only
+
+~[course]
+    course
+    menu course
+    courses
+    meals
+    meal
+    food
+
+@[price]
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    1,00
+    1.00
+    1,50
+    1.50
+    2,00
+    2.00
+    2,50
+    2.50
+    3,00
+    3.00
+    3,50
+    3.50
+    4,00
+    4.00
+    4,50
+    4.50
+    5,00
+    5.00
+    5,50
+    5.50
+    6,00
+    6.00
+    6,50
+    6.50
+    7,00
+    7.00
+    7,50
+    7.50
+    8,00
+    8.00
+    8,50
+    8.50
+    3,00
+    3.50
+    10,50
+    10.50
+    ,50
+    .50
+    5
+    5,5
+    5.5
+
+@[mensaName]
+    hardenberg
+    haupt
+    hauptmensa
+    hardenbergmensa
+    skyline cafe
+    skyline
+    tel
+    march
+    mar
+    marmensa
+    marchgebäude
+    mar cafe
+    wetterleuchte
+    wetterleuchten
+    hauptgebaudecafe
+    cafe wetterleuchte
+
+@[menuCourse]
+    suppen
+    suppe
+    soup
+    aktionen
+    aktion
+    special offer
+    beilagen
+    beilage
+    side dish
+    side dishes
+    beilagen
+    desserts
+    dessert
+    nachtisch
+    essen
+    food
+    main dish
+    vorspeisen
+    vorspeise
+    starters
+    salate
+    salat
+    salad
+    salads

@@ -1,0 +1,56 @@
+// Ways to reset food restrictions
+%[reset_food_restrictions]('training': '60', 'testing': '40')
+    ~[i like meat] ~[im not vegan]
+    ~[i eat everything] ~[please?]
+    ~[im not vegan] ~[im not vegetarian?]
+    ~[im not vegetarian]
+    ~[rest food restrictions] ~[please?]
+    ~[show me all food] ~[please?]
+
+~[i like meat]
+    i love meat
+    i don't mind meat
+    give me meat
+
+~[i eat everything]
+    i eat everything
+    my diet is not restricted
+    show me all food
+    show all menu items
+    i want all foods
+    i want all kind of food
+    i eat all kind of food
+    give me all the food
+
+~[im not vegan]
+    im not vegan
+    i'm not vegan
+    im not on a vegan diet
+    i'm not on a vegan diet
+    i don't eat vegan
+    undo vegan
+
+~[im not vegetarian]
+    im not vegetarian
+    i'm not vegetarian
+    im not on a vegetarian diet
+    i'm not on a vegetarian diet
+    undo vegetarian
+
+~[reset food restrictions]
+    reset food restrictions
+    reset my food restrictions
+    reset my set food restrictions
+    undo my food restrictions
+    don't use my food restrictions
+
+~[show me all food]
+    show me all food
+    i don't have any food restrictions
+    i eat the entire menu
+    im not restricted in my diet
+
+~[please]
+    please
+    if you don't mind
+    if you would be so good

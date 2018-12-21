@@ -1,0 +1,60 @@
+// Ways to ask to set mensa context
+%[set_context_mensa]('training': '300', 'testing': '300')
+    ~[greetings?] ~[please?] ~[mensa information]
+    ~[greetings?] ~[hungry] ~[please?]
+    ~[mensa information]
+    ~[hungry]
+
+
+~[please]
+    please
+    if you don't mind
+    if you would be so good
+
+~[hungry]
+    i'm hungry
+    im hungry
+    i want food
+    i need food
+    i need to satisfy my hunger
+    hungry
+    give me food
+    show me food
+    what's for dinner
+    whats for lunch
+    whats for breakfast
+    let me see food
+
+~[mensa information]
+    mensa
+    mensas
+    restaurant
+    restaurants
+    i'm looking for information about mensa
+    mensa information
+    i want information about mensa
+    restaurant information
+    i'm looking for restaurants
+    im looking for mensas
+    i want mensas
+    i want mensa
+    i need information on food
+    what about mensas
+    what about mensa
+    how about mensa
+    how about mensas
+    let me see mensa
+    let's start mensa
+    mensa search
+    lets search mensas
+    search mensas
+    lets search restaurants
+
+~[greetings]
+    hey
+    hi
+    hello
+    greetings
+    good day
+    gday
+    whats up

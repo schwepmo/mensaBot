@@ -1,0 +1,46 @@
+// Ways to ask to show mensa data
+%[show_mensa_data]('training': '1000', 'testing': '1000')
+    ~[please?] ~[show found data] ~[please?]
+    ~[please?] ~[show found data] ~[for?] @[mensaName] ~[please?]
+
+~[please]
+    please
+    if you don't mind
+    if you would be so good
+
+~[show found data]
+    show found mensa data
+    show me the opening hours
+    show the mensa data
+    can you show me the mensa data
+    can you show me information about mensas
+    can you show me information about mensa
+    list mensa data
+    list mensa data information
+    list information about mensas
+    list information about mensa
+
+~[for]
+    for
+    for the
+    about the
+    related to the
+    regarding the
+
+@[mensaName]
+    hardenberg
+    haupt
+    hauptmensa
+    hardenbergmensa
+    skyline cafe
+    skyline
+    tel
+    march
+    mar
+    marmensa
+    marchgebäude
+    mar cafe
+    wetterleuchte
+    wetterleuchten
+    hauptgebaudecafe
+    cafe wetterleuchte

@@ -1,0 +1,22 @@
+{
+  "name": "ba",
+  "version": "1.0.0",
+  "description": "Firstly you have to install all needed packages and their requirements:\r ```\r $ python -m pip install -r requirements.txt\r ```\r Afterwards install spacy and the model you want to use (needed for rasa_nlu):\r ```\r $ python -m pip install rasa_nlu[spacy]\r $ python -m spacy download en_core_web_lg\r $ python -m spacy link en_core_web_lg en\r ```\r (you might need administrative rights to link the spacy model)",
+  "main": "index.js",
+  "dependencies": {
+    "chatito": "^2.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "chatito": "chatito .\\nlu_data_generation --format=rasa --outputPath=.\\nlu_data_generation\\_generated_data",
+    "chatitoti": "chatito .\\nlu_data_generation_TI1 --format=rasa --outputPath=.\\nlu_data_generation_TI1\\_generated_data"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://momo27@gitlab.tubit.tu-berlin.de/momo27/ba.git"
+  },
+  "author": "Moritz Schweppenhäuser",
+  "license": "ISC"
+}

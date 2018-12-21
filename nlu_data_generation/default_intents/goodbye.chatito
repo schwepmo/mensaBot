@@ -1,0 +1,25 @@
+// Ways to say goodbye (taken from chatito example)
+%[goodbye]('training': '200', 'testing': '200')
+    ~[leaving?] ~[bye] ~[bye?] ~[bye?] ~[leaving?]
+    ~[leaving] ~[bye?]
+
+~[bye]
+    bye
+    goodbye
+    ttyl
+    gtg
+    adios
+    farewell
+    adieu
+    chao
+    chau
+
+~[leaving]
+    leaving
+    talk to you soon
+    have to go
+    got to go
+    talk to you later
+    heading out
+    im leaving now
+    going out

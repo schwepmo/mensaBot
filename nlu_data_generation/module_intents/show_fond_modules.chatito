@@ -1,0 +1,36 @@
+// Ways to ask to show found modules
+%[show_found_modules]('training': '100', 'testing': '100')
+    ~[please?] ~[show found modules] ~[please?]
+
+
+~[please]
+    please
+    if you don't mind
+    if you would be so good
+
+~[show found modules]
+    show found modules
+    can you show me found modules
+    can you list all modules
+    found modules
+    found course
+    show me the modules
+    list modules
+    list module
+    list all modules
+    list all found modules
+    list all found module
+    show found course
+    show found courses
+    i want to see the courses
+    let me see the found courses
+    let me see the found modules
+    let me see the found found modules
+    show modules
+    show courses
+    find the courses
+    look for the courses
+    can you show me the modules
+    what modules did you find
+    let me see the module
+    let me see the modules
