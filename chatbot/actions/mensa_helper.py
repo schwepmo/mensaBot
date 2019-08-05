@@ -1,8 +1,8 @@
 from datetime import datetime
 
 from mensa.mensa_requests import *
-from rasa_core_sdk import Action
-from rasa_core_sdk.events import SlotSet, UserUtteranceReverted, ActionReverted
+from rasa_sdk import Action
+from rasa_sdk.events import SlotSet, UserUtteranceReverted, ActionReverted
 
 
 mensa_data_cache: dict = {}
@@ -39,6 +39,7 @@ class ActionCheckMensaNames(Action):
 
 
 class ActionCheckPrice(Action):
+
     def name(self):
         return "action_check_price"
 
@@ -93,6 +94,7 @@ class ActionCheckMenuCourse(Action):
 
 
 class ActionSetVegetarianTrue(Action):
+
     def name(self):
         return "action_set_vegetarian_true"
 
@@ -113,7 +115,6 @@ class ActionResetFoodRestrictions(Action):
         return "action_reset_food_restrictions"
 
     def run(self, dispatcher, tracker, domain):
-
         return [SlotSet("vegan", False), SlotSet("vegetarian", False)]
 
 
@@ -128,6 +129,7 @@ mensa_slots = {
 
 
 class ActionAskForMoreMensaInformation(Action):
+
     def name(self):
         return "action_ask_for_more_mensa_information"
 

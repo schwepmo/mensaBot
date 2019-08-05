@@ -16,7 +16,7 @@ mensa2id = {
     **dict.fromkeys(["march", "mar", "marmensa", "marchgebäude", "mar cafe", "march cafeteria", "538"], "538"),
     **dict.fromkeys(["wetterleuchte", "wetterleuchten", "hauptgebaudecafe", "cafe wetterleuchte",
                     "wetterleuchten cafe", "541"], "541"),
-    # TODO: add more mensen
+    # TODO: add more cafeterias
 }
 
 id2mensa = {
