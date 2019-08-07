@@ -63,12 +63,12 @@ python -m rasa_core.run -d chatbot/models/dialogue -u chatbot/models/nlu/default
 
 interactive training:
 ```
-python -m rasa_core.train --online -u chatbot/models/nlu/tensorflow/test03 -o model_test\dialogue03 -d chatbot\domain.yml -s chatbot\data\dialogue_stories --endpoints chatbot\endpoints.yml --dump_stories --epochs 400 --nlu_threshold 0.65 --core_threshold 0.4 --fallback_action_name action_fallback
+python -m rasa_core.train --online -u chatbot/models/nlu/current -o model_test\dialogue -d chatbot\domain.yml -s chatbot\data\dialogue_stories --endpoints chatbot\endpoints.yml --dump_stories --epochs 400 --nlu_threshold 0.65 --core_threshold 0.4 --fallback_action_name action_fallback
 ```
 
 ## Optional: Generating a larger nlu dataset using Chatito:
 
-As part of my thesis I tried using chatito to generate more training data using chatito (https://github.com/rodrigopivi/Chatito).
+As part of my thesis I tried using chatito to generate more training data using [Chatito](https://github.com/rodrigopivi/Chatito).
 I did this because I had a huge amount of entities. I'm not sure this will still be necessary in the future.
 
 Make sure you have npm installed. Then you can just call `npm install` and chatito should be installed. 
