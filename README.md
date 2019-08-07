@@ -11,13 +11,12 @@ not user friendly. In my free time I am now trying to revamp the bot to hopefull
 
 ## Overview
 
-I am using Rasa (https://rasa.com) for the chatbot. All shown data is collected from the Studieredenwerk-Website
-(https://www.stw.berlin/) using the request library and parsing it using beautiful-soup.
+I am using [Rasa](https://rasa.com) for the chatbot. All shown data is collected from the [Studieredenwerk-Website](https://www.stw.berlin/) using the request library and parsing it using beautiful-soup.
 
 ## Installation
 
 Use a virtual environment. Conda or pip is fine, although I am using pip.
-- Start of by following the rasa-docs to install rasa (https://rasa.com/docs/rasa/1.2.0/user-guide/installation/).
+- Start of by following the rasa-docs to install rasa [here](https://rasa.com/docs/rasa/1.2.0/user-guide/installation/).
 They change their preferred way of installing it from time to time. The link should have the instructions for the
 used version.
 - All other requirements can be installed using:
